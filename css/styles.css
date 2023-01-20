@@ -1,10 +1,10 @@
 
 body{
     background: linear-gradient( #bf0d0a, #3e7a03);
-    margin-top: 40px;
+    margin-top: 3px;
     opacity: 0.9;
     margin: 0 auto;
-    margin-top: 20vh;
+    margin-top: 3vh;
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body{
     color: white;
 }
 img{
-    height: 25vh;
+    height: 23vh;
     width: 30vw;
 }
 
@@ -58,4 +58,8 @@ button:hover{
 .status:hover + .alive{
     display: block;
     color: white;
+}
+.searchBar{
+    text-align: center;
+    margin-bottom: 5px;
 }
