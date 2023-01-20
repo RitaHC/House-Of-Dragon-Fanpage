@@ -13,6 +13,7 @@ const toggleScreen = (id, toggle) => {
 
 const row1 = document.getElementById('row1')
 const row2 = document.getElementById('row2')
+const searchBarDiv = document.getElementById('searchBarDiv')
 
 const rheanyra = document.getElementById('rheanyra')
 const daemon = document.getElementById('daemon')
@@ -29,6 +30,7 @@ const renBioData = document.getElementById('renBioData')
 const RhaenyraBio = () => {
     console.log('Click1')
     toggleScreen('daemon', false)
+    toggleScreen('searchBarDiv', false)
     toggleScreen('renSta', false)
     toggleScreen('rheanys', false)
     toggleScreen('row2', false)
@@ -51,6 +53,7 @@ const deamonBio = () => {
     toggleScreen('rheanys', false)
     toggleScreen('row2', false)
     toggleScreen('deaBioData', true)
+    toggleScreen('searchBarDiv', false)
     console.log(deaBioData)
 }
 
@@ -68,6 +71,7 @@ const rhaenysBio = () => {
     toggleScreen('rheanys', true)
     toggleScreen('row2', false)
     toggleScreen('rhaBioData', true)
+    toggleScreen('searchBarDiv', false)
     console.log(deaBioData)
 }
 
@@ -85,6 +89,7 @@ const alicentBio = () => {
     toggleScreen('alicent', true)
     toggleScreen('row1', false)
     toggleScreen('aliBioData', true)
+    toggleScreen('searchBarDiv', false)
     console.log(deaBioData)
 }
 
@@ -102,6 +107,7 @@ const ottoBio = () => {
     toggleScreen('otto', true)
     toggleScreen('row1', false)
     toggleScreen('ottBioData', true)
+    toggleScreen('searchBarDiv', false)
     console.log(deaBioData)
 }
 
@@ -119,6 +125,7 @@ const cristonBio = () => {
     toggleScreen('criston', true)
     toggleScreen('row1', false)
     toggleScreen('criBioData', true)
+    toggleScreen('searchBarDiv', false)
     console.log(deaBioData)
 }
 
@@ -166,3 +173,6 @@ const searchBar = () => {
 }
 
 //================== Reload Buttons =================
+const refresh = () => {
+    location.reload()
+}
