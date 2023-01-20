@@ -15,9 +15,9 @@ const row1 = document.getElementById('row1')
 const row2 = document.getElementById('row2')
 const searchBarDiv = document.getElementById('searchBarDiv')
 
-const rheanyra = document.getElementById('rheanyra')
+const rhaenyra = document.getElementById('rhaenyra')
 const daemon = document.getElementById('daemon')
-const rheanys = document.getElementById('rheanys')
+const rhaenys = document.getElementById('rhaenys')
 const alicent = document.getElementById('alicent')
 const otto = document.getElementById('otto')
 const criston = document.getElementById('criston')
@@ -32,7 +32,7 @@ const RhaenyraBio = () => {
     toggleScreen('daemon', false)
     toggleScreen('searchBarDiv', false)
     toggleScreen('renSta', false)
-    toggleScreen('rheanys', false)
+    toggleScreen('rhaenys', false)
     toggleScreen('row2', false)
     toggleScreen('renBioData', true)
     console.log(renBioData)
@@ -49,8 +49,8 @@ const deamonBio = () => {
     console.log('Click2')
     toggleScreen('daemon', true)
     toggleScreen('deaSta', false)
-    toggleScreen('rheanyra', false)
-    toggleScreen('rheanys', false)
+    toggleScreen('rhaenyra', false)
+    toggleScreen('rhaenys', false)
     toggleScreen('row2', false)
     toggleScreen('deaBioData', true)
     toggleScreen('searchBarDiv', false)
@@ -67,8 +67,8 @@ const rhaenysBio = () => {
     console.log('Click2')
     toggleScreen('daemon', false)
     toggleScreen('rhaSta', false)
-    toggleScreen('rheanyra', false)
-    toggleScreen('rheanys', true)
+    toggleScreen('rhaenyra', false)
+    toggleScreen('rhaenys', true)
     toggleScreen('row2', false)
     toggleScreen('rhaBioData', true)
     toggleScreen('searchBarDiv', false)
@@ -131,7 +131,7 @@ const cristonBio = () => {
 
 
 //============================== Search Bar =============
-let Characters = [rheanyra, daemon, rheanys, alicent, otto, criston]
+let Characters = [rhaenyra, daemon, rhaenys, alicent, otto, criston]
 
 const search = document.getElementById('search')
 
@@ -139,36 +139,42 @@ const searchBar = () => {
     // let value = e.target.value
     // if (value && value.trim().length > 0){
     //     value = value.trim().toLowerCase()}
-    if(search.value == 'rheanyra' || search.value == 'Rheanyra'){
+    if(search.value === 'rhaenyra' || search.value === 'rhaenyra'){
         toggleScreen('daemon', false)
-        toggleScreen('rheanys', false)
-        toggleScreen('rheanyra', true)
+        toggleScreen('rhaenys', false)
+        toggleScreen('rhaenyra', true)
         toggleScreen('row2', false)
+        toggleScreen('searchBarDiv', false)
     } else if (search.value == 'daemon' || search.value == 'Daemon'){
         toggleScreen('daemon', true)
-        toggleScreen('rheanys', false)
-        toggleScreen('rheanyra', false)
+        toggleScreen('rhaenys', false)
+        toggleScreen('rhaenyra', false)
         toggleScreen('row2', false)
-    } else if (search.value == 'rheanys' || search.value == 'Rheanys'){
+        toggleScreen('searchBarDiv', false)
+    } else if (search.value === 'rhaenys' || search.value === 'rhaenys'){
         toggleScreen('daemon', false)
-        toggleScreen('rheanys', false)
-        toggleScreen('rheanyra', true)
+        toggleScreen('rhaenyra', false)
+        toggleScreen('rhaenys', true)
         toggleScreen('row2', false)
+        toggleScreen('searchBarDiv', false)
     } else if (search.value == 'alicent' || search.value == 'Alicent'){
         toggleScreen('alicent', true)
         toggleScreen('otto', false)
         toggleScreen('criston', false)
         toggleScreen('row1', false)
+        toggleScreen('searchBarDiv', false)
     } else if (search.value == 'otto' || search.value == 'Otto'){
         toggleScreen('alicent', false)
         toggleScreen('otto', true)
         toggleScreen('criston', false)
         toggleScreen('row1', false)
+        toggleScreen('searchBarDiv', false)
     } else if (search.value == 'criston' || search.value == 'Criston'){
         toggleScreen('alicent', false)
         toggleScreen('otto', false)
         toggleScreen('criston', true)
         toggleScreen('row1', false)
+        toggleScreen('searchBarDiv', false)
     } 
 }
 
